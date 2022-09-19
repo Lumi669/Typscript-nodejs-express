@@ -1,0 +1,26 @@
+{
+  "name": "typscript-nodejs-express",
+  "version": "1.0.0",
+  "description": "study following https://bearit.udemy.com/course/understanding-typescript/learn/lecture/16950324#overview",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lumi669/Typscript-nodejs-express.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lumi669/Typscript-nodejs-express/issues"
+  },
+  "homepage": "https://github.com/Lumi669/Typscript-nodejs-express#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
