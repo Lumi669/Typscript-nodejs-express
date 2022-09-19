@@ -1,7 +1,3 @@
-import { Response, Request, NextFunction } from "express";
+import { RequestHandler } from "express";
 
-export const createTodo = (
-  req: Request,
-  res: Response,
-  next: NextFunction
-) => {};
+export const createTodo: RequestHandler = (req, res, next) => {};
