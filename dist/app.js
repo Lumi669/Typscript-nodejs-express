@@ -4,8 +4,12 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
-//const express = require('express')
+const todos_1 = __importDefault(require("./routes/todos"));
 const app = (0, express_1.default)();
+app.use("/todos", todos_1.default);
+app.use((err, req, res, next) => {
+    res.status(500).json({ message: err.message });
+});
 app.get("/", (req, res) => {
     res.send("I don't want to get anything from home page. ");
 });
